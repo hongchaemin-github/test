@@ -1,14 +1,320 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        img {
+            max-width: 100%;
+        }
+
+        .in_header .main_nav li:last-child {
+            margin-right: 0;
+        }
+
+        .in_header .logo {
+            width: 10%;
+        }
+
+        .in_header {
+            display: flex;
+            min-height: 100px;
+            padding: 20px 50px;
+            align-items: center;
+            background-color: #fff;
+            box-sizing: border-box;
+            position: fixed;
+            width: 100%;
+            z-index: 9999;
+        }
+
+        .in_header .main_nav li {
+            display: inline-block;
+            margin-right: 70px;
+            vertical-align: middle;
+            text-transform: uppercase;
+            font-weight: 500;
+
+        }
+
+        ul {
+            display: block;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            padding-inline-start: 40px;
+            unicode-bidi: isolate;
+        }
+
+        .in_header .main_nav {
+            width: 90%;
+            text-align: right;
+        }
+
+        html,
+        body {
+            width: 100%;
+            font-family: 'Montserrat', 'Nanum Barun Gothic', AppleGothic, 'Dotum', sans-serif;
+            font-size: 100%;
+            line-height: 1.4;
+            color: #222;
+            word-break: keep-all;
+            margin: 0;
+        }
+
+        h1 {
+            display: block;
+            margin-block-start: 0.67em;
+            margin-block-end: 0.67em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+        }
+
+        .main_tit {
+            margin-bottom: 30px;
+            font-size: 3.125rem;
+            font-weight: 500;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        h2 {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font: inherit;
+            display: block;
+            font-size: 1.5em;
+            margin-block-start: 0.83em;
+            margin-block-end: 0.83em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            font-weight: bold;
+            unicode-bidi: isolate;
+            color: #222;
+        }
+
+        .view_btn {
+            display: block;
+            width: 100%;
+            max-width: 220px;
+            margin: 0 auto;
+            margin-bottom: 50px;
+            padding: 16px 0;
+            border: solid 1px #222;
+            border-radius: 30px;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            background: transparent;
+            transition: .3s ease;
+            -webkit-transition: .3s ease;
+        }
+
+        .view_btn:after {
+            display: inline-block;
+            padding-left: 20px;
+            vertical-align: middle;
+            content: url("http://sanriokorea.co.kr/wp-content/themes/sanrio/images/ico_more1.png");
+        }
+
+
+        a {
+            text-decoration: none;
+            color: #222;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        .section_wrap * {
+            box-sizing: border-box;
+        }
+
+        div.desc {
+            display: block;
+        }
+
+        .clear:after {
+            display: block;
+            clear: both;
+            content: '';
+        }
+
+        p {
+            display: block;
+        }
+
+        .bg1 {
+            list-style: none;
+            display: flex;
+        }
+
+        .bg1 {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            height: 0;
+            width: calc(20% - 10px);
+            margin: 0 5px 10px;
+            padding-top: calc(20% - 10px);
+            font-family: arial;
+            margin: 25px;
+            outline: dashed 1px black;
+        }
+
+
+        .thumb {
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .desc {
+            font-size: 1.5rem;
+            color: #2a2a2a;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .desc_eng {
+            text-align: center;
+            font-size: 11px;
+        }
+    </style>
 </head>
 
 <body>
+    <header class>
+        <div class=" in_header">
+            <h1 class="logo">
+                <a href="http://127.0.0.1:5500/test2.html">
+                    <img src="http://sanriokorea.co.kr/wp-content/themes/sanrio/images/logo_2023.png"
+                        alt="sanrio korea">
+                </a>
+            </h1>
+            <nav class="main_nav">
+                <ul>
+                    <li id="menu-item-161"
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-161">
+                        <a href="http://sanriokorea.co.kr/company/introduction/">company</a>
+                    </li>
+                    <li id="menu-item-18" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18">
+                        <a href="http://sanriokorea.co.kr/character/">character</a>
+                    </li>
+                    <li id="menu-item-7" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7">
+                        <a href="/place">place</a>
+                    </li>
+                    <li id="menu-item-163"
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-163">
+                        <a href="http://sanriokorea.co.kr/recruit/resume/">recruit</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div id="content-wrap">
+        <div id="primary" class="content-area">
+            <main id="main" class="site-main" role="main">
+                <article id="post-4" class="post-4 page type-page status-publish hentry">
+                    <div class="entry-content">
+                        <div class="main_visual_wrap">
+                            <div class="main_visual">
+                                <img src="./image/sanrio1.png" width="1800" , height="800">
+                            </div>
+                        </div>
+                        <div class="section_wrap main_section">
+                            <section class="main_rowl" id="section01">
+                                <div class="container">
+                                    <h2 class="main_tit"> character</h2>
+                                    <a class="view_btn" href="/character">
+                                        view more
+                                    </a>
+                                    <li class="bg1">
+                                        <div class="thumb">
+                                            <img src="./image/hellokitty.png" alt>
+                                        </div>
+                                        <div class="desc">
+                                            <p class="title">헬로키티</p>
+                                            <p class="title_en">HELLO KITTY</p>
+                                        </div>
+                                    </li>
+                                    <li class="bg1">
+                                        <div class="thumb">
+                                            <img src="./image/2.png" alt>
+                                        </div>
+                                        <div class="desc">
+                                            <p class="title">마이멜로디</p>
+                                            <p class="title_en">MY MELODY</p>
+                                        </div>
+                                    </li>
+                                    <li class="bg1">
+                                        <div class="thumb">
+                                            <img src="./image/3.png" alt>
+                                        </div>
+                                        <div class="desc">
+                                            <p class="title">쿠로미</p>
+                                            <p class="title_en">KUROMI</p>
+                                        </div>
+                                    </li>
+                                    <li class="bg1">
+                                        <div class="thumb">
+                                            <img src="./image/4.png" alt>
+                                        </div>
+                                        <div class="desc">
+                                            <p class="title">폼폼푸린</p>
+                                            <p class="title_en">POMPOMPURIN</p>
+                                        </div>
+                                    </li>
+                                    <li class="bg1">
+                                        <div class="thumb">
+                                            <img src="./image/5.png" alt>
+                                        </div>
+                                        <div class="desc">
+                                            <p class="title">시나모롤</p>
+                                            <p class="title_en">CINAMOROLL</p>
+                                        </div>
+                                    </li>
+                                    <li class="bg1">
+                                        <div class="thumb">
+                                            <img src="./image/6.png" alt>
+                                        </div>
+                                        <div class="desc">
+                                            <p class="title">리틀트윈스타</p>
+                                            <p class="title_en">LittleTwinStars</p>
+                                        </div>
+                                    </li>
+                                    <li class="bg1">
+                                        <div class="thumb">
+                                            <img src="./image/7.png" alt>
+                                        </div>
+                                        <div class="desc">
+                                            <p class="title">포차코</p>
+                                            <p class="title_en">POCHACCO</p>
+                                        </div>
+                                    </li>
+                                    <li class="bg1">
+                                        <div class="thumb">
+                                            <img src="./image/8.png" alt>
+                                        </div>
+                                        <div class="desc">
+                                            <p class="title">케로케로케로피</p>
+                                            <p class="title_en">KEROKEROKEROPPI</p>
+                                        </div>
+                                    </li>
+                                    </ul>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </article>
+            </main>
+        </div>
 
+    </div>
 </body>
 
 </html>
